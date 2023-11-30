@@ -173,3 +173,4 @@ Fancybox.bind('[data-fancybox]', {
         type: 'classic',
     },
 }); 
+new WOW().init();
