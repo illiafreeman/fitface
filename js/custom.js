@@ -31,12 +31,12 @@ $(document).ready(function () {
             $(scrollTop).removeClass('vis');
         }
 
-            if ($(window).scrollTop() >= 1) {
-                $('.header').addClass('fixed');
-            }
-            else {
-                $('.header').removeClass('fixed');
-            }
+        if ($(window).scrollTop() >= 1) {
+            $('.header').addClass('fixed');
+        }
+        else {
+            $('.header').removeClass('fixed');
+        }
 
     });
     $(scrollTop).click(function () {
@@ -46,7 +46,7 @@ $(document).ready(function () {
         return false;
     });
     /*end scroll to top*/
-    
+
 });
 
 $('.header-nav__link, .footer__nav-link').on('click', function (event) {
@@ -85,7 +85,7 @@ if ($(window).width() > 1280) {
         });
     }
 }
-$('.review__more').click(function() {
+$('.review__more').click(function () {
     $(this).siblings().addClass('full');
     $(this).hide();
 });
@@ -104,37 +104,76 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
-$('.port__item').click(function() {
+$('.port__item').click(function () {
     $('body').addClass('oh');
     $('.modal-bg').addClass('vis');
     $('#modal-port').addClass('vis');
 
 });
-$('.modal__close').click(function() {
+$('.modal__close').click(function () {
     $('body').removeClass('oh');
     $('.modal-bg').removeClass('vis');
     $('.modal-wrap').removeClass('vis');
 });
 
-var mySwiper = new Swiper ('.swiper-container', {
+var mySwiper = new Swiper('#sl_1', {
     // Optional parameters
     loop: true,
-    slidesPerView : 2,
-    centeredSlides : true,
-    effect : 'coverflow',
+    slidesPerView: 2,
+    centeredSlides: true,
+    effect: 'coverflow',
     coverflow: {
-              rotate: 0,
-              stretch: 0,
-              depth: 300,
-              modifier: 1,
-              // slideShadows : true
-          },
-     
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        // slideShadows : true
+    },
+
     // If we need pagination
     // pagination: '.swiper-pagination',
-     
+
     // Navigation arrows
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-      
-    }) 
+
+})
+var swiper = new Swiper("#sl_2", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+});
+Fancybox.bind('[data-fancybox]', {
+    compact: false,
+    idle: false,
+
+    animated: false,
+    showClass: false,
+    hideClass: false,
+
+    dragToClose: false,
+    contentClick: false,
+
+    Images: {
+        // Disable animation from/to thumbnail on start/close
+        zoom: false,
+    },
+
+    Toolbar: {
+        display: {
+            left: [],
+            middle: ['infobar'],
+            right: ['close'],
+        },
+    },
+
+    Thumbs: {
+        type: 'classic',
+    },
+}); 

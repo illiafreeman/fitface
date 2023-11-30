@@ -16,6 +16,7 @@
         rel="stylesheet">
 
     <link href="https://cdn.bootcss.com/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
 </head>
 
@@ -74,20 +75,65 @@
         <div class="container">
             <article class="article client">
                 <h2 class="title">Ergebnisse meiner Klientinnen</h2>
-                
+                <div id="sl_2" class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide" data-fancybox="gallery" data-src="img/elem_1@2x.jpg">
+                            <img src="img/elem_1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide" data-fancybox="gallery" data-src="img/elem_2@2x.jpg">
+                            <img src="img/elem_2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide" data-fancybox="gallery" data-src="img/elem_3@2x.jpg">
+                            <img src="img/elem_3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide" data-fancybox="gallery" data-src="img/elem_4@2x.jpg">
+                            <img src="img/elem_4.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide" data-fancybox="gallery" data-src="img/elem_5@2x.jpg">
+                            <img src="img/elem_5.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide" data-fancybox="gallery" data-src="img/elem_6@2x.jpg">
+                            <img src="img/elem_6.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide" data-fancybox="gallery" data-src="img/elem_7@2x.jpg">
+                            <img src="img/elem_7.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide" data-fancybox="gallery" data-src="img/elem_8@2x.jpg">
+                            <img src="img/elem_8.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <!--     <div class="swiper-pagination"></div> -->
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </article>
         </div>
             <article>
                 <!-- Slider main container -->
-                <div class="swiper-container">
+                <div id="sl_1" class="swiper-container">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide c1">Slide 1</div>
-                        <div class="swiper-slide c2">Slide 2</div>
-                        <div class="swiper-slide c3">Slide 3</div>
-                        <div class="swiper-slide c4">Slide 4</div>
-                        <div class="swiper-slide c5">Slide 5</div>
+                        <div class="swiper-slide">
+                            <img src="img/elem_1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/elem_2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/elem_3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/elem_4.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide ">
+                            <img src="img/elem_5.jpg" alt="">
+                        </div>
                     </div>
                     <!-- If we need pagination -->
                     <!--     <div class="swiper-pagination"></div> -->
@@ -222,6 +268,7 @@
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
     <script src="js/custom.js"></script>
     <script>
