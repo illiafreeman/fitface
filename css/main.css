@@ -2035,6 +2035,41 @@ body {
   font-family: var(--ff);
 }
 
+.swiper-container {
+  width: 800px;
+  height: 400px;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: monospace;
+  letter-spacing: 0.08rem;
+}
+
+.c1 {
+  background-color: indianred;
+}
+
+.c2 {
+  background-color: teal;
+}
+
+.c3 {
+  background-color: lightskyblue;
+}
+
+.c4 {
+  background-color: lightcoral;
+}
+
+.c5 {
+  background-color: lightgoldenrodyellow;
+}
+
 .footer {
   margin: auto auto 0 auto;
 }

@@ -5,20 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Peony</title>
+    <title>Fitface</title>
 
-    <link rel="apple-touch-icon" sizes="152x152" href="./img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
-    <link rel="manifest" href="./img/site.webmanifest">
-    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    
+    <link href="https://cdn.bootcss.com/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
 </head>
 
@@ -95,15 +90,24 @@
             </div>
         </article>
         <div class="container">
-            <article class="article welcome">
-                <div class="welcome__pic">
-                    <img class="welcome__pic-img" src="./img/main.png" alt="">
-                    <img value="5" class="welcome__pic-bg move" src="./img/main_bg.png" alt="">
-                </div>
-                <div class="welcome__desc">
-                    <h4 class="welcome__title">Хотите провести официальную церемонию регистрации брака в Грузии?</h4>
-                    <p class="welcome__descr">Это очень просто! И требуется минимум документов.</p>
-                    <a href="" class="btn btn_dark">Узнать цену</a>
+            <article >
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide c1">Slide 1</div>
+                    <div class="swiper-slide c2">Slide 2</div>
+                    <div class="swiper-slide c3">Slide 3</div>
+                    <div class="swiper-slide c4">Slide 4</div>
+                    <div class="swiper-slide c5">Slide 5</div>
+                    </div>
+                    <!-- If we need pagination -->
+                <!--     <div class="swiper-pagination"></div> -->
+                    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </article>
             <article class="article why">
@@ -566,6 +570,8 @@
     <script src="js/slick.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
+    <script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
+    
     <script src="js/custom.js"></script>
     <script>
         new WOW().init();
