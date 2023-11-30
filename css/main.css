@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 input,
 select,
 textarea {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--ff);
 }
 
 p {
@@ -48,7 +48,7 @@ a:active {
   text-decoration: none;
   position: relative;
   transition: all 0.2s ease-in-out;
-  color: #000;
+  color: #2c3336;
 }
 
 ul {
@@ -2013,8 +2013,9 @@ table th, table td {
 }
 
 :root {
-  --ff: "Open Sans", sans-serif;
-  --ffs: "Urbanist", sans-serif;
+  --font-family: "Open Sans", sans-serif;
+  --second-family: "Urbanist", sans-serif;
+  --third-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -2022,17 +2023,16 @@ body {
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
-  color: #000;
-  font-family: "Montserrat", sans-serif;
+  color: #2c3336;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 22px;
+  line-height: 1.4;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   flex-direction: column;
   background: #fff;
-  font-family: var(--ff);
+  font-family: var(--font-family);
 }
 
 .swiper-container {
@@ -2111,11 +2111,11 @@ body {
   position: absolute;
   bottom: -5px;
   right: 0;
-  background: #000;
+  background: #2c3336;
   transition: all 0.2s ease-in-out;
 }
 .footer__nav-link:hover {
-  color: #000;
+  color: #2c3336;
 }
 .footer__nav-link:hover:before {
   width: 100%;
@@ -2131,165 +2131,7 @@ body {
 /*end fixed footer*/
 .container {
   margin: 0 auto;
-  width: 1260px;
-}
-
-.header {
-  position: fixed;
-  padding: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 200px;
-  transition: all 0.2s ease-in-out;
-  z-index: 100;
-}
-.header.fixed {
-  background: #fff;
-  height: 82px;
-  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.11);
-}
-.header.fixed .header-logo {
-  width: 67px;
-  height: 58px;
-  background: url(../img/logo_dark.png) no-repeat center center/cover;
-}
-.header.fixed .header-nav__link {
-  color: #000;
-}
-.header.fixed .header-nav__link:before {
-  background: #000;
-}
-.header.fixed .soclist, .header.fixed .header__tel {
-  display: none;
-}
-.header.fixed .header-menu {
-  padding: 0;
-  height: 100%;
-  align-items: center;
-}
-.header.fixed .container {
-  height: 100%;
-}
-.header.fixed .lang {
-  display: none;
-}
-.header__tel {
-  position: absolute;
-  top: 35px;
-  right: 170px;
-  color: #fff;
-}
-.header__tel:hover, .header__tel:focus, .header__tel:visited, .header__tel:active {
-  position: absolute;
-  color: #fff;
-}
-.header__tel:before {
-  content: "";
-  width: 0;
-  height: 1px;
-  position: absolute;
-  bottom: -5px;
-  right: 0;
-  background: #fff;
-  transition: all 0.2s ease-in-out;
-}
-.header__tel:hover:before {
-  width: 100%;
-  left: 0;
-}
-
-.header-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 64px;
-  position: relative;
-  padding: 26px 0;
-}
-.header-menu__btn {
-  display: none;
-}
-
-.header-logo {
-  display: flex;
-  width: 160px;
-  height: 146px;
-  background: url(../img/logo_white.png) no-repeat center center/cover;
-}
-
-.header-navgroup {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-}
-
-.header-nav {
-  display: flex;
-  gap: 46px;
-  align-items: flex-end;
-}
-.header-nav_right {
-  justify-content: flex-end;
-}
-.header-nav__link {
-  font-size: 18px;
-  line-height: 24px;
-  position: relative;
-  font-weight: 400;
-  color: #fff;
-}
-.header-nav__link:hover, .header-nav__link:focus, .header-nav__link:visited, .header-nav__link:active {
-  color: #fff;
-}
-.header-nav__link:before {
-  content: "";
-  width: 0;
-  height: 1px;
-  position: absolute;
-  bottom: -5px;
-  right: 0;
-  background: #fff;
-  transition: all 0.2s ease-in-out;
-}
-.header-nav__link:hover:before {
-  width: 100%;
-  left: 0;
-}
-
-.header-contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.header-contact__tel {
-  font-size: 18px;
-  line-height: 22px;
-  color: #000;
-  font-weight: 400;
-  margin-bottom: 3px;
-}
-.header-contact__tel:before {
-  content: "";
-  width: 0;
-  height: 1px;
-  position: absolute;
-  bottom: -2px;
-  right: 0;
-  background: #000;
-  transition: all 0.2s ease-in-out;
-}
-.header-contact__tel:hover:before {
-  width: 100%;
-  left: 0;
-}
-.header-contact__address {
-  font-size: 14px;
-  line-height: 17px;
-  text-transform: uppercase;
-  margin-bottom: 8px;
+  width: 1180px;
 }
 
 .btn {
@@ -2301,12 +2143,11 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 16px;
-  color: #000;
+  color: #2c3336;
   transition: all 0.2s ease-in-out;
   background: #FFEDF2;
   border: 0;
   cursor: pointer;
-  font-family: "Montserrat", sans-serif;
 }
 .btn:hover {
   background: #F1CED8;
@@ -2319,7 +2160,7 @@ body {
 }
 
 .article {
-  padding-top: 114px;
+  padding: 106px 0;
 }
 
 .soclist {
@@ -2364,37 +2205,19 @@ body {
 
 .intro {
   display: flex;
-  padding: 0 0 180px;
+  height: 900px;
   justify-content: space-between;
   gap: 40px;
   background: url(../img/intro.jpg) no-repeat center top/cover;
-  padding-top: 280px;
-  color: #fff;
-}
-.intro_portfolio {
-  background: url(../img/portfolio_intro.jpg) no-repeat center top/cover;
-}
-.intro_info {
-  background: url(../img/faq_bg.jpg) no-repeat center top/cover;
-}
-.intro_price {
-  background: url(../img/price_bg.jpg) no-repeat center top/cover;
-}
-.intro_ex1 {
-  background: url(../img/mountain_bg.jpg) no-repeat center top/cover;
-}
-.intro_ex2 {
-  background: url(../img/wine_bg.jpg) no-repeat center top/cover;
-}
-.intro_ex3 {
-  background: url(../img/sea_bg.jpg) no-repeat center top/cover;
-}
-.intro_ex4 {
-  background: url(../img/city_bg.jpg) no-repeat center top/cover;
 }
 .intro__desc {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  width: 550px;
+}
+.intro .container {
+  display: flex;
   justify-content: flex-end;
   align-items: center;
 }
@@ -2429,7 +2252,6 @@ body {
 }
 
 .title {
-  font-family: "Tenor Sans", sans-serif;
   font-weight: 400;
   font-size: 48px;
   line-height: 56px;
@@ -2450,14 +2272,12 @@ body {
   font-size: 32px;
   line-height: 39px;
   text-align: left;
-  font-family: "Montserrat", sans-serif;
   margin-bottom: 30px;
 }
 .title_h4 {
   font-size: 22px;
   line-height: 26px;
   text-align: left;
-  font-family: "Montserrat", sans-serif;
   text-transform: none;
   margin-bottom: 60px;
 }
@@ -2494,7 +2314,6 @@ body {
 .welcome__title {
   font-size: 38px;
   line-height: 44px;
-  font-family: "Tenor Sans", sans-serif;
   margin-bottom: 34px;
 }
 .welcome__descr {
@@ -2538,7 +2357,6 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  font-family: "Tenor Sans", sans-serif;
   opacity: 0.6;
 }
 .adv {
@@ -2655,7 +2473,6 @@ body {
   font-size: 34px;
   line-height: 40px;
   text-transform: uppercase;
-  font-family: "Tenor Sans", sans-serif;
   padding-bottom: 16px;
   margin-bottom: 16px;
   border-bottom: 1px solid #fff;
@@ -2855,7 +2672,6 @@ body {
   padding-bottom: 0;
 }
 .faq_price .accordion {
-  font-family: "Tenor Sans", sans-serif;
   font-size: 32px;
   font-weight: 400;
 }
@@ -2871,9 +2687,8 @@ body {
   font-size: 18px;
   background: transparent;
   border: 1px solid #9EACA4;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   transition: all 0.2s ease-in-out;
-  font-family: "Montserrat", sans-serif;
   position: relative;
   color: #000;
 }
@@ -2912,6 +2727,8 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
+  padding: 0 38px;
+  margin-bottom: 20px;
 }
 .panel ul {
   padding-left: 16px;
@@ -2935,7 +2752,6 @@ body {
   border: 1px solid #9EACA4;
   border-top: 0;
   margin-bottom: 20px;
-  transform: translateY(-20px);
 }
 .panel.active p:last-child, .panel.active li:last-child {
   margin-bottom: 0;
@@ -3143,7 +2959,6 @@ body {
 }
 .port__item-name {
   font-size: 20px;
-  font-family: "Tenor Sans", sans-serif;
   letter-spacing: 0.4px;
   text-transform: uppercase;
   text-align: center;
@@ -3282,7 +3097,6 @@ body {
   display: block;
   font-size: 12px;
   line-height: 22px;
-  font-family: "f400";
   margin-bottom: -8px;
 }
 .modal__action .error {
@@ -3290,7 +3104,6 @@ body {
   display: block;
   font-size: 12px;
   line-height: 22px;
-  font-family: "f400";
 }
 .modal__action div.error {
   margin-top: -15px;
