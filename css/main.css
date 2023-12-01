@@ -226,10 +226,6 @@ body {
   background: #7F0505;
 }
 
-.wow {
-  visibility: hidden;
-}
-
 .faq {
   padding-bottom: 120px;
 }
@@ -862,4 +858,11 @@ body {
 }
 .soclist__soc:hover {
   transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    width: 100%;
+    padding: 0 40px;
+  }
 }/*# sourceMappingURL=main.css.map */
