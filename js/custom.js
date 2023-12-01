@@ -127,13 +127,7 @@ var mySwiper = new Swiper('#sl_1', {
         stretch: 0,
         depth: 300,
         modifier: 1,
-        // slideShadows : true
     },
-
-    // If we need pagination
-    // pagination: '.swiper-pagination',
-
-    // Navigation arrows
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
 
