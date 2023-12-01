@@ -463,12 +463,6 @@ body {
         width: 1060px;
         height: auto;
     }
-    .swiper-wrapper {
-    }
-    .swiper-slide {
-    }
-    .swiper-pagination {
-    }
     .swiper-button{
         background: none;
         display: flex;
@@ -575,6 +569,9 @@ body {
 }
 .comment {
     padding-bottom: 76px;
+    &__wrap{
+        position: relative;
+    }
     .title {
         text-align: center;
     }
@@ -583,7 +580,40 @@ body {
         height: 500px;
         padding: 30px 0;
     }
-    .swiper-wrapper {
+    .swiper-button{
+        background: none;
+        display: flex;
+        align-items: center;
+        svg{
+            width: 40px;
+            height: 40px;;
+            fill: transparent;
+            stroke: $black;
+            stroke-width: 3;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            transition: all .15s ease;
+            transform: var(--f-button-transform);
+            filter: var(--f-button-svg-filter);
+            pointer-events: none;
+            opacity: .6;
+        }
+        &:hover{
+            svg{
+                stroke: #000;
+                opacity: 1;
+            }
+        }
+    }
+    .swiper-button-prev {
+        transform: rotate(180deg);
+        left: 0;
+    }
+    .swiper-button-next {
+        right: 0;
+    }
+    .swiper-button-disabled{
+        opacity: 0;
     }
     .swiper-slide {
         background: #deb3b3;
@@ -598,12 +628,6 @@ body {
                 opacity: 1;
             }
         }
-    }
-    .swiper-pagination {
-    }
-    .swiper-button-prev {
-    }
-    .swiper-button-next {
     }
     .swiper-slide-shadow-left, .swiper-slide-shadow-right{
         background: transparent;
