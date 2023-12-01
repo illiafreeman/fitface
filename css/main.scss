@@ -18,7 +18,7 @@ body {
     color: #2c3336;
     font-weight: 400;
     font-size: 22px;
-    line-height: 1.4;
+    line-height: 1.3;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -130,33 +130,24 @@ body {
     padding: 0 30px;
     justify-content: center;
     align-items: center;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 16px;
-    color: $black;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
     transition: $transition;
-    background: #FFEDF2;
+    background: #920606;
     border: 0;
     cursor: pointer;
 
-    &:hover {
-        background: #F1CED8;
-    }
-
-    &_dark {
-        background: #F1CED8;
-
-        &:hover {
-            background: #D194A5;
-        }
+    &:hover,
+    &:focus,
+    &:visited,
+    &:active {
+        background: #7F0505;
+        color: #fff;
     }
 }
-
-.article {
-    padding: 106px 0;
-
-}
-
 .soclist {
     display: flex;
 
@@ -188,61 +179,6 @@ body {
         height: 60px;
         transition: $transition;
         fill: #4A5644;
-    }
-}
-
-
-
-.intro {
-    display: flex;
-    height: 900px;
-    justify-content: space-between;
-    gap: 40px;
-    background: url(../img/intro.jpg) no-repeat center top / cover;
-
-    &__desc {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 550px;
-    }
-
-    .container {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    &__sub {
-        max-width: 480px;
-        margin-bottom: 36px;
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 27px;
-        text-align: center;
-        margin-bottom: 48px;
-    }
-
-    &__pic {
-        flex: 0 0 390px;
-        position: relative;
-    }
-
-    &__pic-img {
-        width: 368px;
-        height: 520px;
-        border-radius: 300px;
-        position: relative;
-        z-index: 10;
-        object-fit: cover;
-    }
-
-    &__pic-bg {
-        position: absolute;
-        display: block;
-        bottom: -27px;
-        left: -27px;
-        max-width: 416px;
     }
 }
 
@@ -511,6 +447,135 @@ body {
             fill: #FFEDF2;
         }
     }
+}
+.article {
+    padding: 106px 0;
+}
+.intro {
+    position: relative;
+    display: flex;
+    height: 900px;
+    justify-content: space-between;
+    gap: 40px;
+    background: url(../img/intro.jpg) no-repeat center top / cover;
+    align-items: stretch;
+    padding: 0;
+    &__desc {
+        position: relative;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 550px;
+        p{
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 22px;
+            color: #000;
+            margin-bottom: 37px;
+        }
+        
+    }
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        overflow: visible;
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            height: 1100px;
+            width: 1400px;
+            background: url(../img/ellipse_old.png) no-repeat left center / contain;
+            top: -100px;
+            left: calc(100% - 700px);
+        }
+    }
+}
+.container {
+}
+.wow {
+}
+.animate {
+    &__animated {}
+    &__fadeIn {}
+}
+.title {
+}
+.subtitle {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #7b1b14;
+    margin-bottom: 18px;
+}
+.about {
+    &__desc {}
+    &__text {}
+    &__list {}
+    &__pic {}
+}
+.online {
+    &__pic {}
+    &__desc {}
+    &__list {}
+}
+.client {
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.form {
+    &__title {}
+    &__text {}
+    &__wrap {}
+}
+.get {
+    &__desc {}
+    &__list {}
+    &__pic {}
+}
+.comment {
+    &__item {}
+    &__pic {}
+    &__text {}
+    &__name {}
+}
+.tarif {
+    &__wrap {}
+    &__el {}
+    &__info {}
+    &__name {}
+    &__desc {}
+    &__cost {}
+    &__label {}
+}
+.faq {
+}
+.acc {
+}
+.accordion {
+}
+.panel {
+}
+.contact {
+    &__tel {}
+    &__mail {}
+}
+.soclist {
+    &__soc {}
 }
 
 
