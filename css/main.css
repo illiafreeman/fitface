@@ -2165,17 +2165,6 @@ body {
   fill: #4A5644;
 }
 
-.title {
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 56px;
-  margin-bottom: 48px;
-  text-transform: uppercase;
-  max-width: 914px;
-  text-align: center;
-  letter-spacing: 0.02em;
-}
-
 .wow {
   visibility: hidden;
 }
@@ -2438,6 +2427,15 @@ body {
   left: calc(100% - 700px);
 }
 
+.title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #920606;
+  margin-bottom: 52px;
+}
+
 .subtitle {
   font-family: var(--second-family);
   font-weight: 700;
@@ -2526,4 +2524,60 @@ body {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 21px;
+}
+
+.client .title {
+  text-align: center;
+}
+.client__wrap {
+  position: relative;
+}
+.client .swiper-container {
+  width: 1100px;
+  height: auto;
+}
+.client .swiper-button {
+  background: none;
+  display: flex;
+  align-items: center;
+}
+.client .swiper-button svg {
+  width: 40px;
+  height: 40px;
+  fill: transparent;
+  stroke: #2c3336;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: all 0.15s ease;
+  transform: var(--f-button-transform);
+  filter: var(--f-button-svg-filter);
+  pointer-events: none;
+  opacity: 0.6;
+}
+.client .swiper-button:hover svg {
+  stroke: #000;
+  opacity: 1;
+}
+.client .swiper-button-prev {
+  transform: rotate(180deg);
+  left: 0;
+}
+.client .swiper-button-next {
+  right: 0;
+}
+.client .swiper-button-disabled {
+  opacity: 0;
+}
+
+.swiper-slide {
+  cursor: pointer;
+}
+.swiper-slide img {
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+.swiper-slide img:hover {
+  border-color: #920606;
+  border-radius: 4px;
 }/*# sourceMappingURL=main.css.map */

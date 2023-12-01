@@ -139,8 +139,8 @@ var mySwiper = new Swiper('#sl_1', {
 
 })
 var swiper = new Swiper("#sl_2", {
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 4,
+    spaceBetween: 20,
     freeMode: true,
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
