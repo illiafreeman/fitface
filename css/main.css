@@ -2499,13 +2499,31 @@ body {
 }
 .online .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-start;
+  position: relative;
+}
+.online .subtitle {
+  margin-bottom: 60px;
 }
 .online__pic {
-  width: 200px;
-  height: 100%;
+  position: absolute;
+  height: calc(100% + 212px);
+  bottom: -106px;
+  left: 0;
 }
 .online__desc {
-  flex: 1 0 680px;
+  flex: 0 0 680px;
+}
+.online__list {
+  display: grid;
+  grid-template: auto auto/1fr 1fr;
+  gap: 40px;
+}
+.online__list li {
+  padding-top: 68px;
+  background: url(../img/star.svg) left top no-repeat;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 21px;
 }/*# sourceMappingURL=main.css.map */

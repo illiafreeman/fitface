@@ -560,18 +560,34 @@ body {
     gap: 70px;
     .container{
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: flex-start;
+        position: relative;
+    }
+    .subtitle{
+        margin-bottom: 60px;
     }
     &__pic {
-        width: 200px;
-        height: 100%;
-        
+        position: absolute;
+        height: calc(100% + 212px);
+        bottom: -106px;
+        left: 0;
     }
     &__desc {
-        flex: 1 0 680px;
+        flex: 0 0 680px;
     }
-    &__list {}
+    &__list {
+        display: grid;
+        grid-template: auto auto / 1fr 1fr;
+        gap: 40px;
+        li{
+            padding-top: 68px;
+            background: url(../img/star.svg) left top no-repeat;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 21px;
+        }
+    }
 }
 .client {
 }
