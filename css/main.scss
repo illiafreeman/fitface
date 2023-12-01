@@ -580,15 +580,61 @@ body {
 }
 .swiper-button-next {
 }
-.form {
-    &__title {}
-    &__text {}
-    &__wrap {}
+.how {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        li{
+            padding: 22px 0;
+            position: relative;
+            border-top: 1px solid #920606;
+            display: flex;
+            align-items: center;
+            span{
+                min-width: 60px;
+                font-family: var(--second-family);
+                font-weight: 700;
+                font-size: 56px;
+                height: 56px; 
+                line-height: 1; 
+                display: flex;  
+                align-content: center;
+                text-transform: uppercase;
+                color: rgba(44, 51, 54, 0.61);
+            }
+            &:last-child{
+                margin-bottom: 0;
+                border-bottom: 1px solid #920606;
+            }
+        }
+    }
 }
 .get {
-    &__desc {}
-    &__list {}
-    &__pic {}
+    background: #f7f7f7;
+    .container{
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+    }
+    &__desc {
+        flex: 0 0 480px;
+    }
+    &__list {
+        li{
+            margin-bottom: 30px;
+            padding-left: 60px;
+            background: url(../img/ok.svg) left center no-repeat;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__pic {
+        position: absolute;
+        height: calc(100% + 212px);
+        bottom: -106px;
+        right: 0;
+    }
 }
 .comment {
     &__item {}

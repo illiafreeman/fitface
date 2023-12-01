@@ -2527,4 +2527,58 @@ body {
 .swiper-slide img:hover {
   border-color: #920606;
   border-radius: 4px;
+}
+
+.how__list {
+  display: flex;
+  flex-direction: column;
+}
+.how__list li {
+  padding: 22px 0;
+  position: relative;
+  border-top: 1px solid #920606;
+  display: flex;
+  align-items: center;
+}
+.how__list li span {
+  min-width: 60px;
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 56px;
+  height: 56px;
+  line-height: 1;
+  display: flex;
+  align-content: center;
+  text-transform: uppercase;
+  color: rgba(44, 51, 54, 0.61);
+}
+.how__list li:last-child {
+  margin-bottom: 0;
+  border-bottom: 1px solid #920606;
+}
+
+.get {
+  background: #f7f7f7;
+}
+.get .container {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+.get__desc {
+  flex: 0 0 480px;
+}
+.get__list li {
+  margin-bottom: 30px;
+  padding-left: 60px;
+  background: url(../img/ok.svg) left center no-repeat;
+}
+.get__list li:last-child {
+  margin-bottom: 0;
+}
+.get__pic {
+  position: absolute;
+  height: calc(100% + 212px);
+  bottom: -106px;
+  right: 0;
 }/*# sourceMappingURL=main.css.map */
