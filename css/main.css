@@ -2465,7 +2465,7 @@ body {
   position: relative;
 }
 .client .swiper-container {
-  width: 1100px;
+  width: 1060px;
   height: auto;
 }
 .client .swiper-button {
@@ -2567,11 +2567,14 @@ body {
   right: 0;
 }
 
+.comment {
+  padding-bottom: 76px;
+}
 .comment .title {
   text-align: center;
 }
 .comment .swiper-container {
-  width: 1000px;
+  width: 1060px;
   height: 500px;
   padding: 30px 0;
 }
@@ -2631,4 +2634,62 @@ body {
   font-family: var(--second-family);
   font-weight: 500;
   font-size: 22px;
+}
+
+.tarif {
+  padding-top: 0;
+}
+.tarif .title {
+  text-align: center;
+}
+.tarif__wrap {
+  display: flex;
+  gap: 20px;
+  width: 1060px;
+  margin: 0 auto;
+}
+.tarif__el {
+  width: 50%;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.01);
+  background: #f7f7f7;
+  padding: 52px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.tarif__name {
+  margin-bottom: 34px;
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 34px;
+  text-transform: uppercase;
+}
+.tarif__desc {
+  margin-bottom: 96px;
+}
+.tarif__cost {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 56px;
+  text-transform: uppercase;
+  color: #920606;
+}
+.tarif__label {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  background: #920606;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  right: -60px;
+  top: -60px;
 }/*# sourceMappingURL=main.css.map */
