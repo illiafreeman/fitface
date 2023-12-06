@@ -1016,8 +1016,13 @@ body {
     margin-bottom: 38px;
   }
   .client__wrap {
-    margin: 0 -80px 0 0;
-    padding: 0 60px;
+    padding: 0 20px;
+  }
+  .client__wrap .swiper-button {
+    display: none;
+  }
+  .client__wrap .swiper-slide img {
+    width: 100%;
   }
   .client .swiper-button-prev {
     left: 10px;
@@ -1176,6 +1181,10 @@ body {
   .soclist {
     display: flex;
     gap: 14px;
+  }
+  .client .swiper-container {
+    width: 100%;
+    overflow: visible;
   }
 }
 @media only screen and (max-width: 768px) {
