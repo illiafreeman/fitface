@@ -1,5 +1,3 @@
-
-
 @media only screen and (max-width: 1280px) {
     .container {
         width: 100%;
@@ -41,6 +39,57 @@
     .online__pic{
         opacity: .5;
     }
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+    .intro {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 70px 0 400px;
+        height: auto;
+        justify-content: flex-start;
+        gap: 20px;
+        background: #F7F7F7;
+    }
+    .intro .container {
+        display: flex;
+        justify-content: center;
+    }
+    .intro__desc{
+        align-items: center;
+        text-align: center;
+    }
+    .intro .container::after{
+        left: -50%;
+        top: auto;
+        bottom: -120px;
+        height: 400%;
+        width: 200%;
+        background: rgba(255, 255, 255, 0.8);
+        //background: red;
+        border-radius: 50%;
+
+    }
+    .intro .container:before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 350px;
+        background: url(../img/intro_min.png) no-repeat center center / contain;
+        bottom: -400px;
+        left: 0;
+        z-index: 100;
+    }
+
+
+
+
+
 
 
 
