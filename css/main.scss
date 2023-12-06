@@ -369,13 +369,11 @@ body {
     margin-bottom: 18px;
 }
 .about {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
     gap: 70px;
     &__desc {
-        //width: 540px;
-        flex: 1 0 540px;
+  
     }
     &__text {
         font-family: var(--second-family);
@@ -435,6 +433,8 @@ body {
     }
     &__desc {
         flex: 0 0 680px;
+        position: relative;
+        z-index: 100;
     }
     &__list {
         display: grid;
@@ -546,6 +546,8 @@ body {
     }
     &__desc {
         flex: 0 0 480px;
+        position: relative;
+        z-index: 100;
     }
     &__list {
         li{
@@ -691,7 +693,9 @@ body {
         text-align: center;
         position: relative;
     }
-    &__info {}
+    &__info {
+        flex: 1 0 auto;
+    }
     &__name {
         margin-bottom: 34px;
         font-family: var(--second-family);

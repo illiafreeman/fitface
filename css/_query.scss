@@ -5,6 +5,54 @@
         width: 100%;
         padding: 0 40px;
     }
+    .comment .swiper-container {
+        width: 100%;
+        height: 550px;
+    }
+    .tarif__wrap{
+        width: 100%;
+    }
+    .tarif__label {
+        right: -30px;
+        top: -30px;
+        width: 80px;
+        height: 80px;
+        font-weight: 500;
+        font-size: 13px;
+    }
+    .client .swiper-container {
+        width: 100%;
+    }
+    .client .swiper-button-prev {
+        left: -30px;
+    }
+    .client .swiper-button-next {
+        right: -30px;
+    }
+    .comment .swiper-button-prev{
+        left: -30px;
+    }
+    .comment .swiper-button-next{
+        right: -30px;
+    }
+    .get__pic{
+        opacity: .5;
+    }
+    .online__pic{
+        opacity: .5;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
