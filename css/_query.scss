@@ -153,11 +153,204 @@
         font-size: 24px;
         margin-bottom: 38px;
     }
+    .client__wrap{
+        margin: 0 -80px 0 0;
+        padding: 0 60px;
+    }
+    .client .swiper-button-prev {
+        left: 10px;
+    }
+    .client .swiper-button-next {
+        right: 10px;
+    }
+    .form .form__title {
+        font-size: 24px;
+        width: auto;
+    }
+    .form .form__text{
+        font-size: 16px;
+        margin-bottom: 36px;
+    }
+    .form__wrap {
+        width: 100%;
+    }
+    .form__wrap input {
+        margin-bottom: 14px;
+        height: 56px;
+        padding: 0 14px;
+        font-size: 16px;
+    }
+    form{
+        width: 100%;
+    }
+    .form__wrap input::placeholder {
+        font-weight: 500;
+    }
+    .form__wrap .btn {
+        height: 56px;
+        margin-top: 24px;
+    }
+    .how__list li {
+        padding: 16px 0;
+        font-size: 14px;
+    }
+    .how__list li span {
+        min-width: 40px;
+        font-size: 36px;
+        height: 36px;
+    }
+    .get__desc {
+        flex: 0 0 auto !important;
+    }
+    .get__list li {
+        margin-bottom: 24px;
+        padding: 40px 0 0 0;
+        background: url(../img/ok.svg) no-repeat left top / 26px 26px;
+        font-size: 14px;
+    }
+    .get__pic {
+        opacity: 1;
+        position: absolute;
+        left: calc(50% - 150px);
+        bottom: -300px;
+        width: 300px;
+        height: auto;
+    }
+    .get{
+        padding-bottom: 300px;
+    }
+    .get .container {
+        display: block;
+    }
+    .comment__wrap{
+        margin: 0 -20px;
+    }
+    .comment__item {
+        padding: 32px;
+    }
+    .comment .swiper-container {
+        width: 700px;
+        height: 600px;
+    }
+    .comment {
+        padding-bottom: 0;
+    }
+    .tarif__wrap {
+        flex-direction: column;
+        gap: 38px;
+    }
+    .tarif__el {
+        width: 100%;
+        padding: 36px;
+    }
+    .tarif__name {
+        margin-bottom: 14px;
+        font-size: 24px;
+    }
+    .tarif__desc {
+        margin-bottom: 62px;
+        font-size: 16px;
+    }
+    .tarif__cost {
+        font-size: 46px;
+    }
+    .tarif__label {
+        right: -16px;
+        top: -16px;
+    }
+    .accordion{
+        &:first-child{
+            padding-top: 0;
+            span {
+                width: 28px;
+                height: 28px;
+                top: -2px;
+            }
+        }
+        font-size: 14px;
+        padding: 30px 30px 30px 0;
+    }
+    .accordion span {
+        width: 28px;
+        height: 28px;
+        top: 26px;
+    }
+    .accordion span::before {
+        width: 16px;
+        height: 2px;
+        top: 13px;
+        right: 6px;
+    }
+    .accordion span::after {
+        height: 16px;
+        width: 2px;
+        top: 6px;
+        right: 13px;
+    }
+    .panel{
+        font-size: 14px;
+        ol, ul {
+            padding-left: 32px;
+        }
+    } 
+    .contact{
+        .title {
+            margin-bottom: 56px;
+        }
+    }
+    .contact__tel {
+        margin-bottom: 26px;
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .contact__mail {
+        font-size: 16px;
+    }
+    .soclist__soc {
+        width: 34px;
+        height: 34px;
+    }
+    .soclist {
+        display: flex;
+        gap: 14px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
-
-
-
+@media only screen and (max-width: 768px) {
+    .comment .swiper-container {
+        width: 100%;
+        height: 500px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .comment .swiper-container {
+        height: 600px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .comment .swiper-container {
+        height: 650px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .comment .swiper-container {
+        height: 750px;
+    }
+}
 
 
 

@@ -30,7 +30,11 @@ var mySwiper = new Swiper('#sl_1', {
     },
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-
+    breakpoints: {
+        768: {
+            slidesPerView: 1.3,
+        },
+    }
 });
 
 var swiper = new Swiper("#sl_2", {
@@ -40,6 +44,16 @@ var swiper = new Swiper("#sl_2", {
     freeMode: true,
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
+    breakpoints: {
+        1280: {
+          //slidesPerView: 2.5,
+          spaceBetween: 5,
+        },
+        600: {
+            slidesPerView: 1.7,
+            spaceBetween: 5,
+        },
+    }
 });
 
 Fancybox.bind('[data-fancybox]', {
