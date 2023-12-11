@@ -1,4 +1,10 @@
+@media only screen and (max-width: 1600px) {
+    
+}
 @media only screen and (max-width: 1280px) {
+    .intro{
+        background: #F7F7F7 url(../img/intro.png) no-repeat center top/cover;
+    }
     .container {
         width: 100%;
         padding: 0 40px;
