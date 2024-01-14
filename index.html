@@ -32,7 +32,7 @@
                     </h3>
                     <p>- und Sie werden innerhalb eines Monats Falten, Schwellungen und Augenringe
                         deutlich reduzieren! Der erste Effekt ist bereits am 4. Tag sichtbar!</p>
-                    <a href="" class="btn">Probieren Sie 1 Lektionen kostenlos aus!</a>
+                    <a href="#form" class="btn">Probieren Sie 1 Lektionen kostenlos aus!</a>
                 </div>
             </div>
         </article>
@@ -119,7 +119,7 @@
                 </div>
             </article>
         </div>
-        <article class="article form">
+        <article id="form" class="article form">
             <div class="container">
                 <h3 class="form__title">
                     Probieren Sie 1 Lektionen kostenlos aus und spüren Sie den ersten Effekt!
@@ -129,7 +129,7 @@
                     <div class="form__wrap">
                         <input type="text" placeholder="Name">
                         <input type="text" placeholder="E-mail">
-                        <button class="btn">Probieren</button>
+                        <button class="btn modal_btn">Probieren</button>
                     </div>
                 </form>
             </div>
@@ -321,7 +321,7 @@
                     <div class="form__wrap">
                         <input type="text" placeholder="Name">
                         <input type="text" placeholder="E-mail">
-                        <button class="btn">Probieren</button>
+                        <button class="btn ">Probieren</button>
                     </div>
                 </form>
             </div>
@@ -391,7 +391,42 @@
             </div>
         </article>
     </main>
-
+    <div class="modal-bg"></div>
+    <div class="modal-wrap">
+        <div class="modal" data-attr="modal_review">
+            <div class="modal__body">
+                <div class="modal__close">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L13 13M13 13L25 25M13 13L25 1M13 13L1 25" stroke="#272727" stroke-width="2" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="modal" data-attr="modal_form">
+            <div class="modal__body">
+                <div class="modal__desc">Check deine E-Mails. Sie haben einen Link zur ersten Lektion erhalten.</div>
+                
+                <div class="modal__close">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L13 13M13 13L25 25M13 13L25 1M13 13L1 25" stroke="#272727" stroke-width="2" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="modal" data-attr="modal_confirm">
+            <div class="modal__body">
+                <div class="formwrap">
+                    <div class="modal__desc modal__desc_confirm">Спасибо за ваше сообщение. Мы свяжемся с вами в ближайшее
+                        время!</div>
+                </div>
+                <div class="modal__close">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L13 13M13 13L25 25M13 13L25 1M13 13L1 25" stroke="#272727" stroke-width="2" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="js/jquery-3.6.0.min.js"></script>
