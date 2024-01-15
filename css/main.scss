@@ -715,6 +715,7 @@ body {
         font-size: 56px;
         text-transform: uppercase;
         color: #920606;
+        margin-bottom: 20px;
     }
     &__label {
         position: absolute;
@@ -733,6 +734,9 @@ body {
         right: -60px;
         top: -60px;
     }
+}
+.btn_kauf{
+    padding: 0 50px;
 }
 .contact {
     background: #f7f7f7;
