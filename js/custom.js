@@ -38,7 +38,7 @@ var mySwiper = new Swiper('#sl_1', {
 });
 
 var swiper = new Swiper("#sl_2", {
-    loop: false,
+    loop: true,
     slidesPerView: 4,
     spaceBetween: 20,
     freeMode: true,
